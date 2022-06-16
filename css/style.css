@@ -1,0 +1,410 @@
+/*.loader{
+  height :50px;
+  animation: rotate 3s linear infinite;
+  justify-content: center;
+}
+
+@keyframes rotate{
+  to{
+      transform:rotate(360deg);
+  }
+}
+.main{
+  opacity:0;
+  display:none;
+  transition:opacity 1s ease-in;
+}*/
+/* font */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(notosanskr.css);
+
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding:0px;
+  margin:0px;
+}
+body{
+  width:100%;
+  height:auto;
+  overflow-x: hidden;
+  margin:0 auto;
+  padding:0px;
+  font-family: Noto Sans KR;
+}
+.container{
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 10px);
+  padding-left: var(--bs-gutter-x, 10px);
+  margin: 0 auto;
+  margin-top:75px;
+}
+#header{
+  position:fixed;
+  width:100%;
+}
+#header.header-transparent {
+  background: transparent;
+}
+.navbar {
+  display:flex;
+  z-index: 2;
+  align-items: center;
+  justify-content:center;
+} 
+.navbar-log {
+  display : flex;
+  height: 90px;
+  z-index: 2;
+}
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style : none;
+  align-items: center;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  padding: 8px 32px;
+  margin-right: 40px; 
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-shadow: #b6c7cf;
+  white-space: nowrap;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #0176F9;
+}
+/*hero*/
+#hero{
+  height : 100vh;
+  margin : 0;
+}
+.video video{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.video-text{
+  position: absolute;
+  margin-top: 25%;
+  width : 100%;
+  height:auto;
+  background-color: white;
+  opacity: 0.4;
+  text-align: center;
+}
+.video-text > h1{
+  font-weight: 700;
+  font-size : 30px;
+  line-height: 100px;
+}
+.video-text h2{
+  font-weight: 500;
+  font-size :25px;
+}
+
+/*ABOUT*/
+#about{
+  margin-top: 200px;
+  width:100%;
+  height:auto;
+}
+.text-title { 
+  text-align: center;
+  font-weight: 700;
+  text-shadow: #96a9dd 1px 0 10px;;
+  font-size: 70px;
+  font-style: italic;
+  color: #0176F9;
+  margin-bottom: 30px;
+}
+.about-box-1 {
+  padding:0 100px;
+  background: linear-gradient(150deg,#CfEBFA,#f8f4fa);
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-box-2 {
+  padding:0 100px;
+  background-color: #f7f7f7;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-box-3 {
+  padding:0 100px;
+  background: linear-gradient(150deg,#CfEBFA,#f8f4fa);
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-6 > img {
+  width: 35%;
+}
+.col-6 > h3 {
+  color: pink;
+  font-size : 25px;
+  font-weight: 600; 
+  animation : slide 1s; 
+}
+.col-6 > h3 > span {
+  color:#FFAEC9; 
+  font-size: 70px; 
+  font-weight: 600;
+}
+.col-6 > h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  animation: slide 1s;
+}
+@keyframes slide{
+  from{
+   margin-left : -300px;
+   opacity : 0;
+  }
+  to{
+    margin-left : 0px;
+    opacity : 1;
+  }
+}
+
+@keyframes disappear{
+  form{
+    left:0px;
+    opacity:1;
+  }
+  to{
+    left : -300px;
+    opacity : 0;
+  }
+}
+/*Team*/
+
+.title h2 span { 
+  display:inline-block; 
+  animation:float .2s ease-in-out infinite; 
+}
+ @keyframes float {
+  0%,100%{ transform:none; }
+  33%{ transform:translateY(-1px) rotate(-2deg); }
+  66%{ transform:translateY(1px) rotate(2deg); }
+}
+body:hover span { 
+    animation:bounce .6s; 
+}
+@keyframes bounce {
+  0%,100%{ transform:translate(0); }
+  25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+  50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+}
+.title span:nth-child(4n) { 
+  color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); 
+}
+.title span:nth-child(4n-1) { 
+  color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); 
+}
+.title span:nth-child(4n-2) { 
+  color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); 
+}
+.title span:nth-child(4n-3) { 
+  color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%); 
+}
+.title h2 span:nth-child(2){ 
+  animation-delay:.05s; 
+}
+.title h2 span:nth-child(3){ 
+  animation-delay:.1s; 
+}
+.title h2 span:nth-child(4){ 
+  animation-delay:.15s; 
+}
+.title h2 span:nth-child(5){ 
+  animation-delay:.2s; 
+}
+.title h2 span:nth-child(6){ 
+  animation-delay:.25s; 
+}
+.title h2 span:nth-child(7){ 
+  animation-delay:.3s; 
+}
+.title h2 span:nth-child(8){ 
+  animation-delay:.35s; 
+}
+.title h2 span:nth-child(9){ 
+  animation-delay:.4s; 
+}
+.title h2 span:nth-child(10){ 
+  animation-delay:.45s; 
+}
+.title h2 span:nth-child(11){ 
+  animation-delay:.5s; 
+}
+.title h2 span:nth-child(12){ 
+  animation-delay:.55s; 
+}
+.title h2 span:nth-child(13){ 
+  animation-delay:.6s; 
+}
+.title h2 span:nth-child(14){ 
+  animation-delay:.65s; 
+}
+#team .container{
+  padding: 30px;
+  background-color:transparent;
+}
+#team .container .title{
+  padding-bottom:30px;
+  font-size: 40px;
+  text-align: center;
+}
+.bx-wrapper {
+  box-shadow: 0px;
+  border: 0px;
+  -webkit-box-shadow: none;
+}
+.slide h3 {
+  margin-top:10px;
+  text-align: center; 
+}
+.slide img {
+  border-radius: 100%;
+}
+
+/* News feed */
+#News {
+  background-color: #f7f7f7;
+}
+.news-title {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 20px;
+  padding: 40px 0;
+}
+.news-list {
+  font-size: 17px;
+  display:flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+.news-list > ul {
+  list-style: none;
+}
+.news-list > ul > li {
+  padding:7px 0;
+}
+.news-list > ul > li > a {
+  text-decoration-line: none;
+  color: #000;
+}
+
+/*Career*/
+#career > .container {
+  border-radius: 22px;
+  background: linear-gradient(90deg,#ff5f6d,#ffc371);
+  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+}
+.career-title {
+  text-align: center;
+  color : #ffff;
+  font-weight: 700;
+  font-size: 50px;
+}
+.career-box {
+  position: relative;
+  text-align: center;
+  color : #ffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+  .individual-career-box {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  background-color: #fff;
+  z-index: 1;
+  }
+/* .img-career img{
+  width:100%;
+  height:auto;
+  border-radius: 20%;
+}
+.icon > i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-career{
+  background:whitesmoke;
+  border-radius: 20%;
+}
+.text-career h2{
+  font-size : 50px;
+}
+.text-career span{
+  font-size: 30px;
+} */
+
+/*footer*/
+.footer{
+  background-color: white;
+  width : 100%;
+  padding : 30px 0 0 0;
+  margin : 0;
+}
+.footer-box a img{
+  width : 50px;
+}
+.footer-box p{
+  font-size: 20px;
+  color : black;
+}
